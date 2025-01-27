@@ -8,7 +8,7 @@ import leekscript.compiler.resolver.FileSystem;
 import leekscript.compiler.resolver.NativeFileSystem;
 import leekscript.compiler.resolver.ResourceFileSystem;
 import leekscript.runner.AI;
-import leekscript.common.Error;
+//import leekscript.common.Error;
 
 public class LeekScript {
 

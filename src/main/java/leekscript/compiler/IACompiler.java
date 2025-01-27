@@ -7,7 +7,7 @@ import leekscript.compiler.expression.LeekVariable;
 import leekscript.compiler.expression.LeekVariable.VariableType;
 import leekscript.Util;
 import leekscript.common.Error;
-import leekscript.common.Type;
+//import leekscript.common.Type;
 
 import java.util.Set;
 

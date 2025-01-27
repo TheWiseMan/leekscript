@@ -25,7 +25,7 @@ public class AIFile {
 	private String rootClazz;
 	private boolean strict = false;
 	public TreeMap<Integer, LineMapping> mLinesMapping = new TreeMap<>();
-	private File filesLines;
+	//private File filesLines;
 	private LexicalParserTokenStream tokens = null;
 
 	public AIFile(String path, String code, long timestamp, int version, int owner, boolean strict) {

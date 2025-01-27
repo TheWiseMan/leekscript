@@ -162,7 +162,7 @@ public class ClassLeekValue extends FunctionLeekValue<Object> {
 		});
 	}
 
-	public void addStaticMethod(String method, int argCount, FunctionLeekValue function, AccessLevel level) throws LeekRunException {
+	public void addStaticMethod(String method, int argCount, FunctionLeekValue<Object> function, AccessLevel level) throws LeekRunException {
 		staticMethods.put("u_" + method + "_" + argCount, new ClassStaticMethod(function, level));
 		if (ai.getVersion() >= 4) {
 			((ArrayLeekValue) this.staticMethodsArray).add(method);
@@ -172,7 +172,7 @@ public class ClassLeekValue extends FunctionLeekValue<Object> {
 	}
 
 	public void addGenericStaticMethod(String method) {
-		genericStaticMethods.put(method, new FunctionLeekValue(0) {
+		genericStaticMethods.put(method, new FunctionLeekValue<Object>(0) {
 			public Object run(AI ai, Object thiz, Object... arguments) throws LeekRunException {
 				final var methodCode = "u_" + method + "_" + arguments.length;
 				final var m = staticMethods.get(methodCode);

@@ -2,7 +2,7 @@ package leekscript.compiler;
 
 import java.util.HashSet;
 
-import leekscript.ErrorManager;
+//import leekscript.ErrorManager;
 import leekscript.common.AccessLevel;
 import leekscript.common.Error;
 import leekscript.common.FunctionType;
